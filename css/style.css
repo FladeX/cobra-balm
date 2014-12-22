@@ -1,3 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+  background: #ddd;
+  color: #626262;
+  font-family: 'Century Gothic';
+  font-size: 16px;
+}
 .i-clearfix:before,
 .i-clearfix:after {
   content: "";
@@ -8,4 +62,39 @@
 }
 .i-clearfix {
   zoom: 1;
+}
+.b-header {
+  background: #fff;
+}
+.b-header__wrapper {
+  margin: 0 auto;
+  width: 1367px;
+}
+.b-header__title {
+  color: #626262;
+  float: left;
+  font-family: 'CaviarDreams Bold';
+  font-size: 48px;
+  font-weight: bold;
+  width: 411px;
+}
+.b-header__navi {
+  float: left;
+  text-align: right;
+  width: 956px;
+}
+.b-header__navi-list {
+  list-style-type: disc;
+}
+.b-header__navi-item {
+  float: left;
+}
+.b-header__navi-link {
+  color: #cfcfcf;
+  font-size: 16px;
+  text-decoration: none;
+}
+.b-header__navi-link:hover {
+  color: #868585;
+  text-decoration: none;
 }
