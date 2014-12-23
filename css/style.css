@@ -130,6 +130,9 @@ body {
   float: left;
   margin-right: 20px;
 }
+.b-header__navi-item:last-child {
+  margin-right: 0;
+}
 .b-header__navi-link {
   background: url('../img/b-header__navi-item.png') no-repeat 0 47px;
   color: #cfcfcf;
