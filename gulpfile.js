@@ -9,14 +9,12 @@ gulp.task('less', function() {
 });
 
 gulp.task('concat-css', function() {
-	gulp.src(['assets/css/reset.css', 'assets/css/style.css'])
+	gulp.src(['assets/css/reset.css', 'assets/css/fonts.css', 'assets/css/style.css'])
 		.pipe(concat('style.css'))
 		.pipe(gulp.dest('css'))
 });
 
 gulp.task('default', function() {
-	gulp.run('less');
-
 	gulp.watch('assets/less/*.less', function(event) {
 		gulp.run('less');
 	})
