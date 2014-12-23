@@ -64,3 +64,59 @@ body {
   color: #868585;
   text-decoration: none;
 }
+.b-intro {
+  background: url('../img/b-intro.jpg') no-repeat 50% 0;
+  height: 988px;
+}
+.b-intro__wrapper {
+  margin: 0 auto;
+  width: 1367px;
+}
+.b-intro__photo {
+  float: left;
+  width: 411px;
+}
+.b-intro__photo-item {
+  margin-top: 86px;
+}
+.b-intro__content {
+  color: #fff;
+  float: left;
+  width: 956px;
+}
+.b-intro__content-link {
+  background: url('../img/icon-pdf.png') no-repeat 100% 5px;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Caviar Dreams';
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 260px;
+  padding-right: 34px;
+  text-decoration: none;
+}
+.b-intro__order {
+  background: rgba(0, 0, 0, 0.3);
+  height: 120px;
+  margin-bottom: 37px;
+  margin-left: 180px;
+  margin-top: 280px;
+  padding: 35px 80px;
+}
+.b-intro__order-title {
+  font-family: 'Caviar Dreams';
+  font-size: 36px;
+}
+.b-intro__order-button {
+  background: #d76270;
+  border: none;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -o-border-radius: 9px;
+  border-radius: 9px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Century Gothic';
+  font-size: 24px;
+  padding: 20px 45px;
+}
