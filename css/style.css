@@ -86,7 +86,7 @@ body {
   font-family: 'Century Gothic';
   font-size: 16px;
   margin: 0 auto;
-  width: 1500px;
+  width: 2000px;
 }
 .i-clearfix:before,
 .i-clearfix:after {
@@ -204,4 +204,99 @@ body {
   font-family: 'Century Gothic';
   font-size: 24px;
   padding: 20px 45px;
+}
+.b-features {
+  background: url('../img/b-features.png') no-repeat 50% 0;
+  height: 1018px;
+  margin-top: 63px;
+}
+.b-features__wrapper {
+  margin: 0 auto;
+  width: 1367px;
+}
+.b-features__content {
+  margin-left: 411px;
+  width: 956px;
+}
+.b-features__suptitle {
+  border-bottom: 2px solid #626262;
+  color: #626262;
+  font-family: 'Century Gothic';
+  font-size: 24px;
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+}
+.b-features__title {
+  color: #626262;
+  font-family: 'Century Gothic';
+  font-size: 44px;
+  line-height: 53px;
+  margin-bottom: 12px;
+}
+.b-features__text {
+  color: #626262;
+  font-family: 'Century Gothic';
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 19px;
+  text-align: justify;
+}
+.b-features__list {
+  color: #626262;
+  font-family: 'Century Gothic';
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 70px;
+}
+.b-features__item {
+  display: block;
+  position: relative;
+}
+.b-features__item_type_safety {
+  margin-left: 240px;
+  padding-top: 35px;
+}
+.b-features__item_type_nature {
+  margin-left: 334px;
+  margin-top: 58px;
+}
+.b-features__item_type_recipes {
+  margin-left: 431px;
+  margin-top: 45px;
+}
+.b-features__item_type_official {
+  margin-left: 522px;
+  margin-top: 35px;
+}
+.b-features__item_type_meditation {
+  margin-left: 630px;
+  margin-top: 24px;
+}
+.b-features__icon {
+  display: block;
+  height: 100px;
+  left: -110px;
+  position: absolute;
+  top: 0;
+  width: 100px;
+}
+.b-features__icon_type_safety {
+  background: url('../img/b-features__icon_safety.png') no-repeat;
+  top: 8px;
+}
+.b-features__icon_type_nature {
+  background: url('../img/b-features__icon_nature.png') no-repeat;
+  top: -27px;
+}
+.b-features__icon_type_recipes {
+  background: url('../img/b-features__icon_recipes.png') no-repeat;
+  top: -20px;
+}
+.b-features__icon_type_official {
+  background: url('../img/b-features__icon_official.png') no-repeat;
+  top: -18px;
+}
+.b-features__icon_type_meditation {
+  background: url('../img/b-features__icon_meditation.png') no-repeat;
+  top: 5px;
 }
