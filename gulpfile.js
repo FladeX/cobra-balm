@@ -14,12 +14,7 @@ gulp.task('concat-css', function() {
 		.pipe(gulp.dest('css'))
 });
 
-gulp.task('default', function() {
-	gulp.watch('assets/less/*.less', function(event) {
-		gulp.run('less');
-	})
-
-	gulp.watch('assets/css/*.css', function(event) {
-		gulp.run('concat-css');
-	})
+gulp.task('default', ['less', 'concat-css'], function() {
+	gulp.watch('assets/less/*.less', ['less']);
+	gulp.watch('assets/css/*.css', ['concat-css']);
 });
