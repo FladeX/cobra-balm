@@ -81,7 +81,7 @@ table {
 }
 
 body {
-  background: #ddd;
+  background: #fff;
   color: #626262;
   font-family: 'Century Gothic';
   font-size: 16px;
@@ -179,15 +179,18 @@ body {
 }
 .b-intro__order {
   background: rgba(0, 0, 0, 0.3);
-  height: 120px;
   margin-bottom: 37px;
-  margin-left: 180px;
+  margin-right: 113px;
   margin-top: 280px;
-  padding: 35px 80px;
+  padding: 30px 0 35px 80px;
+  position: relative;
+  top: 0;
+  left: 180px;
 }
 .b-intro__order-title {
   font-family: 'Caviar Dreams';
   font-size: 36px;
+  margin-bottom: 16px;
 }
 .b-intro__order-button {
   background: #d76270;
