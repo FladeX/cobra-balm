@@ -48,8 +48,8 @@ table {
 }
 @font-face {
   font-family: 'Caviar Dreams';
-  src: url('../fonts/CaviarDreams/Caviar_Dreams_Bold-webfont.eot');
-  src: url('../fonts/CaviarDreams/Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/CaviarDreams/Caviar_Dreams_Bold-webfont.woff') format('woff'), url('../fonts/CaviarDreams/Caviar_Dreams_Bold-webfont.ttf') format('truetype'), url('../fonts/CaviarDreams/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
+  src: url('../fonts/CaviarDreams/CaviarDreams_Bold-webfont.eot');
+  src: url('../fonts/CaviarDreams/CaviarDreams_Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/CaviarDreams/CaviarDreams_Bold-webfont.woff') format('woff'), url('../fonts/CaviarDreams/CaviarDreams_Bold-webfont.ttf') format('truetype'), url('../fonts/CaviarDreams/CaviarDreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
