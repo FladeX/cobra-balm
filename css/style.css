@@ -300,3 +300,43 @@ body {
   background: url('../img/b-features__icon_meditation.png') no-repeat;
   top: 5px;
 }
+.b-analgesic {
+  background: url('../img/b-analgesic.png') no-repeat 50% 0;
+  height: 1014px;
+  margin-top: 63px;
+}
+.b-analgesic__wrapper {
+  margin: 0 auto;
+  width: 1367px;
+}
+.b-analgesic__content {
+  padding-top: 80px;
+  width: 530px;
+}
+.b-analgesic__suptitle {
+  border-bottom: 2px solid #626262;
+  color: #626262;
+  font-family: 'Century Gothic';
+  font-size: 24px;
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+}
+.b-analgesic__title {
+  color: #626262;
+  font-family: 'Century Gothic';
+  font-size: 44px;
+  line-height: 53px;
+  margin-bottom: 70px;
+}
+.b-analgesic__text {
+  color: #626262;
+  font-family: 'Century Gothic';
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 19px;
+  text-align: justify;
+}
+.b-analgesic__text_mode_important {
+  font-weight: bold;
+  font-style: italic;
+}
