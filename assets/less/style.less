@@ -331,3 +331,81 @@ body {
 		}
 	}
 }
+.b-components {
+	background: url('../img/b-components.jpg') no-repeat 50% 0;
+	height: 1015px;
+	margin-top: 63px;
+	&__wrapper {
+		margin: 0 auto;
+		width: 1367px;
+	}
+	&__photo {
+		float: left;
+		width: @column-left-width;
+		&-item {
+			margin-top: 160px;
+		}
+	}
+	&__content {
+		float: left;
+		width: @column-right-width;
+	}
+	&__suptitle {
+		border-bottom: 2px solid #626262;
+		color: #626262;
+		font-family: 'Century Gothic';
+		font-size: 24px;
+		margin-bottom: 14px;
+		padding-bottom: 6px;
+		padding-left: 43px;
+	}
+	&__title {
+		color: #626262;
+		font-family: 'Century Gothic';
+		font-size: 44px;
+		line-height: 53px;
+		margin-bottom: 12px;
+		padding-left: 43px;
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 19px;
+		margin-bottom: 20px;
+		padding-left: 43px;
+		text-align: justify;
+		&_mode_preorder {
+			padding-left: 245px;
+			text-align: right;
+		}
+		&_mode_order {
+			font-style: italic;
+			font-weight: bold;
+			margin-bottom: 46px;
+			padding-left: 245px;
+			text-align: right;
+		}
+	}
+	&__list {
+		margin-bottom: 84px;
+		padding-left: 43px;
+	}
+	&__item {
+		background: url('../img/b-header__navi-item.png') no-repeat 0 6px;
+		margin-bottom: 22px;
+		padding-left: 38px;
+	}
+	&__order-button {
+		background: #d76270;
+		border: none;
+		-webkit-border-radius: 9px;
+		-moz-border-radius: 9px;
+		-o-border-radius: 9px;
+		border-radius: 9px;
+		color: #fff;
+		cursor: pointer;
+		float: right;
+		font-family: 'Century Gothic';
+		font-size: 24px;
+		padding: 13px 45px 14px;
+	}
+}
