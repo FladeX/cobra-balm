@@ -4,7 +4,7 @@ body {
   font-family: 'Century Gothic';
   font-size: 16px;
   margin: 0 auto;
-  width: 2000px;
+  min-width: 1367px;
 }
 .i-clearfix:before,
 .i-clearfix:after {
@@ -70,6 +70,7 @@ body {
 }
 .b-intro__wrapper {
   margin: 0 auto;
+  overflow: hidden;
   width: 1367px;
 }
 .b-intro__photo {
