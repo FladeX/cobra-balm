@@ -308,9 +308,9 @@ body {
   padding: 16px 45px 16px;
 }
 .b-features {
-  background: url('../img/b-features.png') no-repeat 50% 0;
+  background: url('../img/b-features.png') no-repeat 50% 63px;
   height: 1018px;
-  margin-top: 63px;
+  padding-top: 63px;
 }
 .b-features__wrapper {
   margin: 0 auto;
@@ -407,9 +407,9 @@ body {
   top: 5px;
 }
 .b-analgesic {
-  background: url('../img/b-analgesic.png') no-repeat 50% 0;
+  background: url('../img/b-analgesic.png') no-repeat 50% 63px;
   height: 1014px;
-  margin-top: 63px;
+  padding-top: 63px;
 }
 .b-analgesic__wrapper {
   margin: 0 auto;
@@ -517,9 +517,9 @@ body {
   font-size: 36px;
 }
 .b-components {
-  background: url('../img/b-components.jpg') no-repeat 50% 0;
+  background: url('../img/b-components.jpg') no-repeat 50% 63px;
   height: 1015px;
-  margin-top: 63px;
+  padding-top: 63px;
 }
 .b-components__wrapper {
   margin: 0 auto;
