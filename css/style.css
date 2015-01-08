@@ -188,6 +188,13 @@ body {
   height: 97px;
   overflow: hidden;
 }
+.b-header_mode_fixed {
+  height: 63px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
 .b-header__wrapper {
   margin: 0 auto;
   width: 1367px;
@@ -200,6 +207,10 @@ body {
   font-weight: normal;
   line-height: 97px;
   width: 411px;
+}
+.b-header_mode_fixed .b-header__title {
+  font-size: 36px;
+  line-height: 63px;
 }
 .b-header__navi {
   float: left;
@@ -229,6 +240,12 @@ body {
   background: url('../img/b-header__navi-item_active.png') no-repeat 0 47px;
   color: #868585;
   text-decoration: none;
+}
+.b-header_mode_fixed .b-header__navi-list {
+  line-height: 63px;
+}
+.b-header_mode_fixed .b-header__navi-link {
+  background-position: 0 30px;
 }
 .b-intro {
   background: url('../img/b-intro.jpg') no-repeat 50% 0;

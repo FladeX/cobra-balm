@@ -6,7 +6,7 @@
 <link href="css/style.css" rel="stylesheet" />
 <link href="favicon.ico" rel="shortcut icon" />
 </head>
-<body>
+<body id="top">
 <header class="b-header i-clearfix" id="header">
 	<div class="b-header__wrapper">
 		<div class="b-header__title">
@@ -15,7 +15,7 @@
 		<nav class="b-header__navi i-clearfix">
 			<ul class="b-header__navi-list i-clearfix">
 				<li class="b-header__navi-item">
-					<a class="b-header__navi-link" href="#header">Начало</a>
+					<a class="b-header__navi-link" href="#top">Начало</a>
 				</li>
 				<li class="b-header__navi-item">
 					<a class="b-header__navi-link" href="#features">Особенности</a>
@@ -129,5 +129,17 @@
 	</div>
 </section>
 <script src="js/jquery-1.11.2.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var $menu = $("#header");
+		$(window).scroll(function(){
+			if ( $(this).scrollTop() > 60 ){
+				$menu.addClass('b-header_mode_fixed');
+			} else if($(this).scrollTop() <= 60 && $menu.hasClass('b-header_mode_fixed')) {
+				$menu.removeClass('b-header_mode_fixed');
+			}
+		});
+	});
+</script>
 </body>
 </html>

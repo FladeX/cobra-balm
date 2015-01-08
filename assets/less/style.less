@@ -24,6 +24,13 @@ body {
 	background: #fff;
 	height: 97px;
 	overflow: hidden;
+	&_mode_fixed {
+		height: 63px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+	}
 	&__wrapper {
 		margin: 0 auto;
 		width: 1367px;
@@ -36,6 +43,10 @@ body {
 		font-weight: normal;
 		line-height: 97px;
 		width: @column-left-width;
+	}
+	&_mode_fixed &__title {
+		font-size: 36px;
+		line-height: 63px;
 	}
 	&__navi {
 		float: left;
@@ -65,6 +76,12 @@ body {
 				text-decoration: none;
 			}
 		}
+	}
+	&_mode_fixed &__navi-list {
+		line-height: 63px;
+	}
+	&_mode_fixed &__navi-link {
+		background-position: 0 30px;
 	}
 }
 .b-intro {
