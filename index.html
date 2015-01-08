@@ -129,17 +129,6 @@
 	</div>
 </section>
 <script src="js/jquery-1.11.2.min.js"></script>
-<script>
-	$(document).ready(function(){
-		var $menu = $("#header");
-		$(window).scroll(function(){
-			if ( $(this).scrollTop() > 60 ){
-				$menu.addClass('b-header_mode_fixed');
-			} else if($(this).scrollTop() <= 60 && $menu.hasClass('b-header_mode_fixed')) {
-				$menu.removeClass('b-header_mode_fixed');
-			}
-		});
-	});
-</script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
