@@ -187,6 +187,9 @@ body {
   background: #fff;
   height: 97px;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .b-header_mode_fixed {
   height: 63px;
@@ -248,8 +251,9 @@ body {
   background-position: 0 30px;
 }
 .b-intro {
-  background: url('../img/b-intro.jpg') no-repeat 50% 0;
+  background: url('../img/b-intro.jpg') no-repeat 50% 97px;
   height: 988px;
+  padding-top: 97px;
 }
 .b-intro__wrapper {
   margin: 0 auto;
