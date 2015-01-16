@@ -172,11 +172,6 @@ body {
   margin: 0 auto;
   min-width: 1367px;
 }
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
 .i-clearfix:before,
 .i-clearfix:after {
   content: "";
@@ -608,7 +603,8 @@ body {
 }
 .b-popup {
   background: rgba(90, 90, 90, 0.5);
-  position: absolute;
+  display: none;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
