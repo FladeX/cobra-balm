@@ -51,14 +51,22 @@
     $('.b-popup__number_mode_plus').on('click', function() {
       var count, text;
       count = parseInt($('.b-popup__count').text());
-      text = count + 1 + ' шт.';
+      if (count > 9) {
+        text = count + 5 + ' шт.';
+      } else {
+        text = count + 1 + ' шт.';
+      }
       return $('.b-popup__count').text(text);
     });
     return $('.b-popup__number_mode_minus').on('click', function() {
       var count, text;
       count = parseInt($('.b-popup__count').text());
       if (count > 1) {
-        text = count - 1 + ' шт.';
+        if (count > 14) {
+          text = count - 5 + ' шт.';
+        } else {
+          text = count - 1 + ' шт.';
+        }
         return $('.b-popup__count').text(text);
       }
     });

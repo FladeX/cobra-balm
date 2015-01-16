@@ -39,10 +39,16 @@ $(document).ready ->
 		$('.b-popup').show()
 	$('.b-popup__number_mode_plus').on 'click', ->
 		count = parseInt $('.b-popup__count').text()
-		text = count + 1 + ' шт.'
+		if count > 9
+			text = count + 5 + ' шт.'
+		else
+			text = count + 1 + ' шт.'
 		$('.b-popup__count').text text
 	$('.b-popup__number_mode_minus').on 'click', ->
 		count = parseInt $('.b-popup__count').text()
 		if count > 1
-			text = count - 1 + ' шт.'
+			if count > 14
+				text = count - 5 + ' шт.'
+			else
+				text = count - 1 + ' шт.'
 			$('.b-popup__count').text text
