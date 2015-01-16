@@ -446,6 +446,7 @@ body {
 }
 .b-popup__inner {
   background: #fff;
+  border-top: 1px solid #dddbdb;
   height: 661px;
   margin: -330px auto 0;
   position: relative;
@@ -457,6 +458,8 @@ body {
   cursor: pointer;
   display: block;
   line-height: 22px;
+  margin-top: 18px;
+  margin-right: 16px;
   padding-right: 30px;
   text-align: right;
 }
@@ -464,7 +467,7 @@ body {
   font-family: 'Century Gothic';
   font-size: 16px;
   margin-bottom: 30px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .b-popup__steps-item {
   background: #f9f9f9;
@@ -513,5 +516,101 @@ body {
   top: 0;
   left: 100%;
   width: 13px;
+  z-index: 4;
+}
+.b-popup__order {
+  padding: 0 50px;
+  text-align: center;
+}
+.b-popup__field {
+  background: #f9f9f9;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  color: #8b8e95;
+  font-family: 'Century Gothic';
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 17px;
+  padding: 0 12px;
+  width: 276px;
+}
+.b-popup__field_size_small {
+  margin-right: 10px;
+  width: 76px;
+}
+.b-popup__field_size_medium {
+  margin-left: 0;
+  width: 160px;
+}
+.b-popup__field-box {
+  float: left;
+  font-family: 'Century Gothic';
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 20px;
+  padding: 2px;
+  width: 155px;
+}
+.b-popup__fieldset {
+  margin: 0 auto 39px;
+  width: 302px;
+}
+.b-popup__number {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Century Gothic';
+  font-size: 30px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 26px;
+  padding: 0;
+  width: 30px;
+}
+.b-popup__number_mode_minus {
+  background: #dcdcdc;
+  float: left;
+}
+.b-popup__number_mode_plus {
+  background: #f56271;
+  float: right;
+}
+.b-popup__price {
+  float: left;
+  font-size: 14px;
+  line-height: 36px;
+  margin: 0;
+  text-align: left;
+}
+.b-popup__proceed {
+  background: #f56271;
+  border: none;
+  border-radius: 0.88888889px 0 0 0.88888889px;
+  border-radius: 9px 0 0 9px;
+  color: #f9f9f9;
+  cursor: pointer;
+  float: right;
+  font-family: 'Century Gothic';
+  font-size: 16px;
+  font-weight: bold;
+  height: 48px;
+  line-height: 40px;
+  margin-right: 25px;
+  padding: 0 12px 0 32px;
+  position: relative;
+}
+.b-popup__proceed:after {
+  background: url('../img/corner_button.png') no-repeat;
+  content: ' ';
+  cursor: pointer;
+  display: block;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 25px;
   z-index: 4;
 }

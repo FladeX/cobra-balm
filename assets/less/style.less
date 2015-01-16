@@ -448,6 +448,7 @@ body {
 	z-index: 3;
 	&__inner {
 		background: #fff;
+		border-top: 1px solid #dddbdb;
 		height: 661px;
 		margin: -330px auto 0;
 		position: relative;
@@ -459,6 +460,8 @@ body {
 		cursor: pointer;
 		display: block;
 		line-height: 22px;
+		margin-top: 18px;
+		margin-right: 16px;
 		padding-right: 30px;
 		text-align: right;
 	}
@@ -466,7 +469,7 @@ body {
 		font-family: 'Century Gothic';
 		font-size: 16px;
 		margin-bottom: 30px;
-		margin-top: 15px;
+		margin-top: 25px;
 		&-item {
 			background: #f9f9f9;
 			border: 1px solid #ededed;
@@ -515,6 +518,104 @@ body {
 					z-index: 4;
 				}
 			}
+		}
+	}
+	&__order {
+		padding: 0 50px;
+		text-align: center;
+	}
+	&__field {
+		background: #f9f9f9;
+		border: 1px solid #eaeaea;
+		border-radius: 5px;
+		color: #8b8e95;
+		font-family: 'Century Gothic';
+		font-size: 14px;
+		height: 35px;
+		line-height: 35px;
+		margin-bottom: 17px;
+		padding: 0 12px;
+		width: 276px;
+		&_size_small {
+			margin-right: 10px;
+			width: 76px;
+		}
+		&_size_medium {
+			margin-left: 0;
+			width: 160px;
+		}
+		&-box {
+			float: left;
+			font-family: 'Century Gothic';
+			font-size: 14px;
+			height: 30px;
+			line-height: 30px;
+			margin-right: 20px;
+			padding: 2px;
+			width: 155px;
+		}
+	}
+	&__fieldset {
+		margin: 0 auto 39px;
+		width: 302px;
+	}
+	&__number {
+		border: none;
+		border-radius: 5px;
+		color: #fff;
+		cursor: pointer;
+		font-family: 'Century Gothic';
+		font-size: 30px;
+		font-weight: bold;
+		height: 30px;
+		line-height: 26px;
+		padding: 0;
+		width: 30px;
+		&_mode_minus {
+			background: #dcdcdc;
+			float: left;
+		}
+		&_mode_plus {
+			background: #f56271;
+			float: right;
+		}
+	}
+	&__count {
+	}
+	&__price {
+		float: left;
+		font-size: 14px;
+		line-height: 36px;
+		margin: 0;
+		text-align: left;
+	}
+	&__proceed {
+		background: #f56271;
+		border: none;
+		border-radius: 8px/9px 0 0 8px/9px;
+		border-radius: 9px 0 0 9px;
+		color: #f9f9f9;
+		cursor: pointer;
+		float: right;
+		font-family: 'Century Gothic';
+		font-size: 16px;
+		font-weight: bold;
+		height: 48px;
+		line-height: 40px;
+		margin-right: 25px;
+		padding: 0 12px 0 32px;
+		position: relative;
+		&:after {
+			background: url('../img/corner_button.png') no-repeat;
+			content: ' ';
+			cursor: pointer;
+			display: block;
+			height: 48px;
+			position: absolute;
+			top: 0;
+			left: 100%;
+			width: 25px;
+			z-index: 4;
 		}
 	}
 }
