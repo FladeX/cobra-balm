@@ -19,10 +19,11 @@ $(document).ready ->
 				'overflow': 'hidden'
 			.scrollTop(offsetTop)
 			$('.b-popup').show()
-		$('html, body').stop().animate
-			'scrollTop': $target.offset().top
-		, 900, 'swing', ->
-			window.location.hash = target
+		else
+			$('html, body').stop().animate
+				'scrollTop': $target.offset().top
+			, 900, 'swing', ->
+				window.location.hash = target
 	$('.b-popup__close').on 'click', ->
 		$('html, body').css
 			'height': 'auto'
@@ -36,3 +37,12 @@ $(document).ready ->
 			'overflow': 'hidden'
 		.scrollTop(offsetTop)
 		$('.b-popup').show()
+	$('.b-popup__number_mode_plus').on 'click', ->
+		count = parseInt $('.b-popup__count').text()
+		text = count + 1 + ' шт.'
+		$('.b-popup__count').text text
+	$('.b-popup__number_mode_minus').on 'click', ->
+		count = parseInt $('.b-popup__count').text()
+		if count > 1
+			text = count - 1 + ' шт.'
+			$('.b-popup__count').text text

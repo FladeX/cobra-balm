@@ -21,13 +21,14 @@
           'height': '100%',
           'overflow': 'hidden'
         }).scrollTop(offsetTop);
-        $('.b-popup').show();
+        return $('.b-popup').show();
+      } else {
+        return $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+        }, 900, 'swing', function() {
+          return window.location.hash = target;
+        });
       }
-      return $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
-      }, 900, 'swing', function() {
-        return window.location.hash = target;
-      });
     });
     $('.b-popup__close').on('click', function() {
       $('html, body').css({
@@ -38,7 +39,7 @@
         display: 'none'
       });
     });
-    return $('.b-intro__order-button, .b-components__order-button').on('click', function() {
+    $('.b-intro__order-button, .b-components__order-button').on('click', function() {
       var offsetTop;
       offsetTop = $(window).scrollTop();
       $('html, body').css({
@@ -46,6 +47,20 @@
         'overflow': 'hidden'
       }).scrollTop(offsetTop);
       return $('.b-popup').show();
+    });
+    $('.b-popup__number_mode_plus').on('click', function() {
+      var count, text;
+      count = parseInt($('.b-popup__count').text());
+      text = count + 1 + ' шт.';
+      return $('.b-popup__count').text(text);
+    });
+    return $('.b-popup__number_mode_minus').on('click', function() {
+      var count, text;
+      count = parseInt($('.b-popup__count').text());
+      if (count > 1) {
+        text = count - 1 + ' шт.';
+        return $('.b-popup__count').text(text);
+      }
     });
   });
 
