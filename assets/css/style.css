@@ -6,6 +6,11 @@ body {
   margin: 0 auto;
   min-width: 1367px;
 }
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
 .i-clearfix:before,
 .i-clearfix:after {
   content: "";
