@@ -1,8 +1,9 @@
 (function() {
   $(document).ready(function() {
-    var $menu, scroll_height;
+    var $menu, item_price, scroll_height;
     $menu = $('#header');
     scroll_height = 40;
+    item_price = 499;
     $(window).scroll(function() {
       if ($(this).scrollTop() > scroll_height) {
         return $menu.addClass('b-header_mode_fixed');
@@ -43,25 +44,33 @@
       return $('.b-popup').show();
     });
     $('.b-popup__number_mode_plus').on('click', function() {
-      var count, text;
+      var count, price, text;
       count = parseInt($('.b-popup__count').text());
       if (count > 9) {
         text = count + 5 + ' шт.';
+        price = (count + 5) * item_price;
       } else {
         text = count + 1 + ' шт.';
+        price = (count + 1) * item_price;
       }
-      return $('.b-popup__count').text(text);
+      price = price.toLocaleString().toString().replace(/,/g, '&nbsp;');
+      $('.b-popup__count').text(text);
+      return $('.b-popup__price-sum').html(price);
     });
     return $('.b-popup__number_mode_minus').on('click', function() {
-      var count, text;
+      var count, price, text;
       count = parseInt($('.b-popup__count').text());
       if (count > 1) {
         if (count > 14) {
           text = count - 5 + ' шт.';
+          price = (count - 5) * item_price;
         } else {
           text = count - 1 + ' шт.';
+          price = (count - 1) * item_price;
         }
-        return $('.b-popup__count').text(text);
+        price = price.toLocaleString().toString().replace(/,/g, '&nbsp;');
+        $('.b-popup__count').text(text);
+        return $('.b-popup__price-sum').html(price);
       }
     });
   });

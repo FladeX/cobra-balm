@@ -1,6 +1,7 @@
 $(document).ready ->
 	$menu = $('#header')
 	scroll_height = 40
+	item_price = 499
 	$(window).scroll ->
 		if $(this).scrollTop() > scroll_height
 			$menu.addClass('b-header_mode_fixed')
@@ -34,14 +35,22 @@ $(document).ready ->
 		count = parseInt $('.b-popup__count').text()
 		if count > 9
 			text = count + 5 + ' шт.'
+			price = (count + 5) * item_price
 		else
 			text = count + 1 + ' шт.'
+			price = (count + 1) * item_price
+		price = price.toLocaleString().toString().replace(/,/g, '&nbsp;');
 		$('.b-popup__count').text text
+		$('.b-popup__price-sum').html price
 	$('.b-popup__number_mode_minus').on 'click', ->
 		count = parseInt $('.b-popup__count').text()
 		if count > 1
 			if count > 14
 				text = count - 5 + ' шт.'
+				price = (count - 5) * item_price
 			else
 				text = count - 1 + ' шт.'
+				price = (count - 1) * item_price
+			price = price.toLocaleString().toString().replace(/,/g, '&nbsp;');
 			$('.b-popup__count').text text
+			$('.b-popup__price-sum').html price
