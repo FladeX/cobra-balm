@@ -164,7 +164,7 @@ table {
   font-style: normal;
 }
 
-body {
+.b-page {
   background: #fff;
   color: #626262;
   font-family: 'Century Gothic';
@@ -615,9 +615,10 @@ body {
   background: #fff;
   border-top: 1px solid #dddbdb;
   height: 661px;
-  margin: -330px auto 0;
-  position: relative;
+  margin: -330px 0 0 -241px;
+  position: absolute;
   top: 50%;
+  left: 50%;
   width: 483px;
 }
 .b-popup__close {

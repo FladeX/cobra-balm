@@ -13,11 +13,8 @@ $(document).ready ->
 		$target = $(target)
 
 		if target == '#order'
-			offsetTop = $(window).scrollTop()
-			$('html, body').css
-				'height': '100%'
+			$('body').css
 				'overflow': 'hidden'
-			.scrollTop(offsetTop)
 			$('.b-popup').show()
 		else
 			$('html, body').stop().animate
@@ -25,17 +22,13 @@ $(document).ready ->
 			, 900, 'swing', ->
 				window.location.hash = target
 	$('.b-popup__close').on 'click', ->
-		$('html, body').css
-			'height': 'auto'
+		$('body').css
 			'overflow': 'auto'
 		$('.b-popup').css
 			display: 'none'
 	$('.b-intro__order-button, .b-components__order-button').on 'click', ->
-		offsetTop = $(window).scrollTop()
-		$('html, body').css
-			'height': '100%'
+		$('body').css
 			'overflow': 'hidden'
-		.scrollTop(offsetTop)
 		$('.b-popup').show()
 	$('.b-popup__number_mode_plus').on 'click', ->
 		count = parseInt $('.b-popup__count').text()
