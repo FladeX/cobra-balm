@@ -615,12 +615,23 @@ table {
 .b-popup__inner {
   background: #fff;
   border-top: 1px solid #dddbdb;
+  box-shadow: 0 18px 5px 5px rgba(99, 99, 99, 0.5);
   height: 661px;
   margin: -330px 0 0 -241px;
   position: absolute;
   top: 50%;
   left: 50%;
   width: 483px;
+}
+.b-popup__inner:after {
+  background: url('../img/b-popup-bg.png') no-repeat;
+  content: ' ';
+  display: block;
+  height: 19px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 484px;
 }
 .b-popup__close {
   background: url('../img/icon-close.png') no-repeat 100% 0;
